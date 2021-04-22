@@ -1,8 +1,14 @@
 import React from "react"
-import { CAlert, CFooter, CLink } from '@coreui/react';
+import Footer from "./dashcontainer/footer"
+import Header from "./dashcontainer/header"
+import StatsCard from "./dashcontainer/stats"
 
 function App() {
-    return (<h1> Loaded! </h1>
+    return (<div>
+        <Header/>
+        <StatsCard/>
+        <Footer/>
+    </div>
  )     
 }
 
