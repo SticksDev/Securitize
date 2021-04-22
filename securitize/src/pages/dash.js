@@ -25,7 +25,6 @@ function App() {
         , "ThreeDots"
         , "Watch"
         , "RevolvingDot"
-        , "Plane"
         , "MutatingDots"
         , "CradleLoader"]
     const randomloader = Math.floor(Math.random() * loaders.length)
