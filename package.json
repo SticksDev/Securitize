@@ -1,0 +1,19 @@
+{
+  "name": "secretize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-logging": "^4.5.0",
+    "chalk": "^4.1.1",
+    "create-react-app": "^4.0.3",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security"
+  }
+}

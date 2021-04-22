@@ -1,0 +1,12 @@
+docker {
+    backend:
+        flow: request (/api/process/keyAdd?="")
+        flow: request (/api/process/keyRemove?="")
+        flow: request (/api/process/keyList)
+    frontend: 
+        react {
+            dash: keyAdd -> backend -> sucess message
+            dash: keyRemove -> backend -> sucess message
+            dash: keyList -> backend -> sucess message
+        }
+}
