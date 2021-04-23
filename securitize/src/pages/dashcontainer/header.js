@@ -1,12 +1,12 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -65,21 +65,16 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SearchAppBar() {
   const classes = useStyles();
-
+  
   return (
     <div className={classes.root}>
       <AppBar position="absolute">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
+          {/* <Button variant="contained" color="secondary" classname={classes.menuButton} onClick={alert("This menu is comeing soon!")}>
+            Open Menu
+          </Button> */}
           <Typography className={classes.title} variant="h6" noWrap>
-          Securitize
+            Securitize
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

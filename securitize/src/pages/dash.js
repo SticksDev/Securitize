@@ -11,7 +11,7 @@ function App() {
         }, 3000);
 
         return () => { window.clearTimeout(handle); }
-    })
+    }, [])
     const loaders = ["Audio"
         , "BallTriangle"
         , "Bars"
@@ -30,7 +30,7 @@ function App() {
     const randomloader = Math.floor(Math.random() * loaders.length)
     return (
         <div style={{ textAlign: "center", width: "100%", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
-          {!loaded ? <Loader type={loaders[randomloader]} color="#00BFFF" height={100} width={100} /> : <DashHome />}
+          {!loaded ? <Loader type={loaders[randomloader]} color="#00BFFF" height={100} width={100} /> : <DashHome/>}
         </div>
       );
 }

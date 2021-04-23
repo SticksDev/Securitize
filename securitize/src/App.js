@@ -37,7 +37,7 @@ function App() {
             <p>If you see this page, the Securitize server is successfully installed and
           working. To acess the GUI, please go to /dash </p>
           </div>
-          <Particles />
+          <Particles/>
         </Route>
       </Switch>
     </Router>
